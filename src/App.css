@@ -330,3 +330,14 @@
 *::after {
   box-sizing: inherit;
 }
+body{
+  margin:0;
+  padding:0;
+  font-family: 'poppins' sans-serif;
+  
+}
+.header-container{
+  background-color:var(--sl-color-purple-800) ;
+  height: 45px;
+  
+}
