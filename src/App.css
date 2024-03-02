@@ -375,20 +375,64 @@ body{
 .input{
   position: absolute;
   padding:0.7em 0.7em 0.7em 2.5em;
-  width: 300px;
+  width: 250px;
 
 
 }
+
+@media (min-width:50em){
+  .input{
+    width: 300px;
+  }
+
+}
 .header-end{
-  margin: auto;
-  
-  
-
-
-
+  display: flex;
+  gap:2em;
+  margin-left: auto;
+  align-items: center;
 
 }
 .notify-icon{
   color: whitesmoke;
   
 }
+.profile-container{
+  display: flex;
+  align-items: center;
+  
+  
+}
+.profile-txt{
+  display: none;
+}
+@media (min-width:50em){
+  .profile-txt{
+    display: block;
+    margin-left: .5em;
+    margin-bottom: .2em;
+    color: var(--white-color);
+    font-weight: 700;
+}
+.profile-txt + .profile-txt{
+  margin-top: 0.2em;
+
+}
+.profile-txt.role{
+  font-size: 0.7em;
+  margin-bottom: 1.5em;
+
+}
+  
+}
+.profile-img{
+  background-color: whitesmoke;
+  border-radius: 10px;
+  border: var(--white-color1000);
+
+  padding: 0.7em;
+  left: 2em;
+  
+
+}
+

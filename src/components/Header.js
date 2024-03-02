@@ -1,6 +1,7 @@
 import Logo from "./logo/Logo";
 import Search from "./mini-components/Search";
 import Notification from "./mini-components/Notification";
+import Profile from "./Profile/Profile";
 
 const Header=()=>{
     return(
@@ -9,12 +10,10 @@ const Header=()=>{
             <Search/>
             <div className="header-end">
             <Notification/>
+            <Profile/>
 
             </div>
-         
-
-
-        </header>
+         </header>
 
     )
 
