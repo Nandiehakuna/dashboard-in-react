@@ -1,15 +1,10 @@
+import Logo from "./logo/Logo";
+
 const Header=()=>{
     return(
-        <div className="header-container">
-            <header >
-                header
-
-
-            </header>
-
-
-
-        </div>
+        <header className="header-container">
+            <Logo/>
+        </header>
 
     )
 

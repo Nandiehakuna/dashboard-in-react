@@ -337,7 +337,24 @@ body{
   
 }
 .header-container{
+  display: flex;
   background-color:var(--sl-color-purple-800) ;
   height: 45px;
+  justify-content:space-between;
   
+  
+
+  
+  
+  
+}
+.logo-container{
+  display: flex;
+  align-items: center;
+  margin-left: 2em;
+  justify-content:space-around ;
+  color: whitesmoke;
+  top: 0;
+  font-size: 12px;
+
 }
