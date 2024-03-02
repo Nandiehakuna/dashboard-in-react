@@ -388,6 +388,7 @@ body{
 }
 .header-end{
   display: flex;
+  position: relative;
   gap:2em;
   margin-left: auto;
   align-items: center;
@@ -430,9 +431,19 @@ body{
   border-radius: 10px;
   border: var(--white-color1000);
 
-  padding: 0.7em;
+  padding: 0.3em;
   left: 2em;
   
 
 }
+.dropdown{
+  color: whitesmoke;
+  background: grey;
 
+}
+
+
+.toggle-list{
+  position: absolute;
+  left: 5em;
+}
