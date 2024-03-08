@@ -1,6 +1,8 @@
 import FormImg from './FormImg';
 import logo from '../../assets/img/logo.png';
 import google from '../../assets/img/google.png';
+import InputFields from './mini/InputFields';
+
 
 
 const LoginForm =()=>{
@@ -8,12 +10,7 @@ const LoginForm =()=>{
         <div className="login-page">
             <FormImg/>
              
-             <form action="POST" className='form-input' >
-                {/* logo and name of the company */}
-                {/* heading saying welcome back */}
-                {/* a button saying login with google  */}
-                {/* a text saying or with */}
-                {/* then it will contain the input fields  */}
+            <form action="POST" className='form-input' >
                 <div className="form-logo">
                     <img src={logo} alt="" />
                     <h1>Dash<span>Me</span></h1>
@@ -24,30 +21,16 @@ const LoginForm =()=>{
                     {/* google icon */}
                 <button className='form-btn'>
                     <img src={google} alt="" />
-                    login with google
+                    log in With google
 
                 </button>
 
 
                 </div>
-                <h1>or with</h1>
+                <h1 className='or'>or login with</h1>
                {/* input fields */}
-
-
-
-               
-               
-
-                <input type="text" />
-
-
-                
-
-
-
-
-
-             </form>
+               <InputFields/>
+            </form>
 
 
         </div>
