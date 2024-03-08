@@ -3,7 +3,7 @@ const InputFields =()=>{
         <div className="input-fields">
             <div className="email">
             <label htmlFor="" className="label">EmailAddress</label>
-       <input type="email" placeholder='Email Address' />
+            <input type="email" placeholder='Email Address' />
 
             </div>
             <div className="password">
