@@ -1,6 +1,7 @@
 import ImageUrl from "../../assets/img/profile.png" 
 import { Button, Menu, MenuItem } from "@mui/material";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const ProfileImg=()=>{
     const [dropdown , setDropdown]=useState(null)
@@ -25,7 +26,10 @@ const ProfileImg=()=>{
                 open={menuOpen}
                 onClose={handleClose}
             >
-                <MenuItem onClick={handleClose}>Login</MenuItem>
+                <MenuItem onClick={handleClose}>
+                    <Link to={'/login'}>
+                    Login
+                    </Link></MenuItem>
                 <MenuItem onClick={handleClose}>Sign Up</MenuItem>
                 <MenuItem>view profile</MenuItem>
             </Menu>
