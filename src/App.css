@@ -487,6 +487,7 @@ body{
 }
 .form-input{
   width: 60%;
+  /* text-align: center; */
 
   }
 
@@ -495,7 +496,9 @@ body{
   align-items: center;
   font-size: 15px;
   gap: .5em;
-  text-align: center;
+}
+h1{
+  color: var(--sl-color-indigo-950) ;
 }
 
 .form-logo h1{
@@ -504,4 +507,8 @@ body{
   font-size: 25px;
 }
 
+ .logo-header{
+  font-size: 50px;
+  color: ;
+}
 

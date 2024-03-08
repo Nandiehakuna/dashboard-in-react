@@ -1,5 +1,6 @@
 import FormImg from './FormImg';
 import logo from '../../assets/img/logo.png';
+import google from '../../assets/img/google.png';
 
 
 const LoginForm =()=>{
@@ -18,10 +19,14 @@ const LoginForm =()=>{
                     <h1>Dash<span>Me</span></h1>
 
                 </div>
-                <h1>welcome back</h1>
+                <h1 className='logo-header'>welcome Back</h1>
                 <div className="google-login">
                     {/* google icon */}
-                <button>login with google</button>
+                <button className='form-btn'>
+                    <img src={google} alt="" />
+                    login with google
+
+                </button>
 
 
                 </div>
