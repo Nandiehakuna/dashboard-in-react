@@ -1,35 +1,69 @@
-import FormImg from './FormImg';
-import logo from '../../assets/img/logo.png';
-import google from '../../assets/img/google.png';
-import InputFields from './mini/InputFields';
+import { useState } from 'react';
+
+import FormLogo from './mini/FormLogo';
+import GoogleLogin from './mini/GoogleLogin';
+import SideForm from './SideForm';
+import SignupLink from './mini/SignupLink';
+import Forget from './mini/Forget';
+import Form from '../form/Form';
+
+
 
 
 
 const LoginForm =()=>{
+   
+
+    const inputs=[
+        {
+            id:"1",
+            name:"email",
+            label:"Email Address",
+            placeholder:"email ",
+            messages:"should contain only 8-12 characters and shouldnt include any special character",
+            type:"email",
+           
+            required:true,
+},
+        {
+            id:"2",
+            name:"password",
+            label:"password",
+            placeholder:"password",
+            messages:"should contain only 8-12 characters and shouldnt include any special character",
+            type:"password",
+            pattern:"^(?=.*[a-zA-Z])(?=.*\d)(?=.*[!@#$%^&*()-+_])[a-zA-Z\d!@#$%^&*()-+_]{1,8}$",
+            required:true,
+
+        }
+    ]
+
+    const handleSubmit=(e)=>{
+        e.preventDefault();
+        alert("form was submitted successfully")
+        
+    }
+
+    
+
+
     return(
         <div className="login-page">
-            <FormImg/>
+            <SideForm/>
              
-            <form action="POST" className='form-input' >
-                <div className="form-logo">
-                    <img src={logo} alt="" />
-                    <h1>Dash<span>Me</span></h1>
+            <form action="POST" className='form-input' onSubmit={handleSubmit} >
+                <FormLogo/>
+                <div className="flex-column">
+                   <GoogleLogin/>
+                   <Form inputs={inputs}/>
+                   <Forget/>
+                   <button className="login">login</button>
+                   <SignupLink/>
 
                 </div>
-                <h1 className='logo-header'>welcome Back</h1>
-                <div className="google-login">
-                    {/* google icon */}
-                <button className='form-btn'>
-                    <img src={google} alt="" />
-                    log in With google
 
-                </button>
+               
 
-
-                </div>
-                <h1 className='or'>or login with</h1>
-               {/* input fields */}
-               <InputFields/>
             </form>
 
 
